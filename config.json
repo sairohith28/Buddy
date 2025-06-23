@@ -1,0 +1,93 @@
+{
+  "system_config": {
+    "default_user": "default_user",
+    "max_quiz_questions": 10,
+    "min_quiz_questions": 3,
+    "default_study_time": 30,
+    "auto_save_interval": 300,
+    "analytics_retention_days": 90
+  },
+  "llm_config": {
+    "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+    "temperature": 0.3,
+    "max_tokens": 2000,
+    "timeout": 30
+  },
+  "learning_styles": {
+    "visual": {
+      "techniques": ["mind_mapping", "flashcards", "diagrams", "color_coding"],
+      "preferred_content": "visual_explanations"
+    },
+    "auditory": {
+      "techniques": ["read_aloud", "audio_recordings", "discussions", "mnemonics"],
+      "preferred_content": "audio_explanations"
+    },
+    "kinesthetic": {
+      "techniques": ["hands_on", "walking_study", "building_models", "active_notes"],
+      "preferred_content": "interactive_examples"
+    },
+    "reading": {
+      "techniques": ["cornell_notes", "summarization", "outlining", "annotation"],
+      "preferred_content": "text_based_explanations"
+    }
+  },
+  "difficulty_levels": {
+    "struggling": {
+      "quiz_difficulty": 0.3,
+      "explanation_complexity": "very_simple",
+      "practice_frequency": "high"
+    },
+    "beginner": {
+      "quiz_difficulty": 0.5,
+      "explanation_complexity": "simple",
+      "practice_frequency": "medium"
+    },
+    "intermediate": {
+      "quiz_difficulty": 0.7,
+      "explanation_complexity": "moderate",
+      "practice_frequency": "medium"
+    },
+    "advanced": {
+      "quiz_difficulty": 0.9,
+      "explanation_complexity": "complex",
+      "practice_frequency": "low"
+    }
+  },
+  "motivation_triggers": {
+    "streak_milestones": [3, 7, 14, 30, 60, 100],
+    "score_improvements": [10, 20, 30],
+    "time_milestones": [5, 10, 25, 50, 100],
+    "topic_mastery_celebration": true
+  },
+  "study_techniques": {
+    "spaced_repetition": {
+      "intervals": [1, 3, 7, 14, 30],
+      "effectiveness": 0.9
+    },
+    "active_recall": {
+      "frequency": "daily",
+      "effectiveness": 0.8
+    },
+    "elaborative_interrogation": {
+      "question_types": ["why", "how", "what_if"],
+      "effectiveness": 0.7
+    },
+    "interleaving": {
+      "topic_mixing": true,
+      "effectiveness": 0.75
+    }
+  },
+  "analytics_config": {
+    "track_performance_trends": true,
+    "generate_weekly_reports": true,
+    "identify_learning_patterns": true,
+    "predict_difficulty_areas": true,
+    "recommendation_engine": true
+  },
+  "ui_preferences": {
+    "theme": "educational",
+    "progress_visualization": "charts",
+    "notification_style": "encouraging",
+    "dashboard_layout": "comprehensive"
+  }
+}

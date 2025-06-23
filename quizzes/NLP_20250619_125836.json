@@ -1,0 +1,62 @@
+{
+  "questions": [
+    {
+      "type": "multiple-choice",
+      "question": "What is the primary goal of Natural Language Processing (NLP)?",
+      "options": [
+        {
+          "text": "To generate human-like language",
+          "value": "A"
+        },
+        {
+          "text": "To analyze and understand human language",
+          "value": "B"
+        },
+        {
+          "text": "To create artificial intelligence",
+          "value": "C"
+        },
+        {
+          "text": "To translate languages",
+          "value": "D"
+        }
+      ],
+      "correct-answer": "B",
+      "explanation": "The primary goal of NLP is to analyze and understand human language, which involves tasks such as text classification, sentiment analysis, and language translation.",
+      "hints": [
+        "Think about the purpose of NLP in everyday life.",
+        "Consider the types of tasks that NLP is used for."
+      ]
+    },
+    {
+      "type": "short-answer",
+      "question": "What is the difference between a token and a word in NLP?",
+      "answer": "",
+      "explanation": "In NLP, a token is a single unit of text, such as a word, punctuation mark, or special character. A word, on the other hand, is a sequence of characters that forms a unit of meaning. For example, 'hello' is a word, but 'hello!' is a token.",
+      "hints": [
+        "Think about the individual units of text that make up a sentence.",
+        "Consider the difference between a word and a punctuation mark."
+      ]
+    },
+    {
+      "type": "true-false",
+      "question": "NLP is a subset of artificial intelligence.",
+      "options": [
+        {
+          "text": "True",
+          "value": "A"
+        },
+        {
+          "text": "False",
+          "value": "B"
+        }
+      ],
+      "correct-answer": "A",
+      "explanation": "NLP is a subfield of artificial intelligence that focuses on the interaction between computers and human language.",
+      "hints": [
+        "Think about the relationship between NLP and AI.",
+        "Consider the types of tasks that NLP is used for."
+      ]
+    }
+  ]
+}

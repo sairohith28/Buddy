@@ -1,0 +1,20 @@
+{
+  "user_id": "demo_user",
+  "learning_style": "visual",
+  "difficulty_preference": "intermediate",
+  "interests": [
+    "mathematics",
+    "physics",
+    "computer science"
+  ],
+  "goals": [
+    "Master calculus",
+    "Understand quantum mechanics",
+    "Learn machine learning"
+  ],
+  "time_availability": 45,
+  "preferred_explanation_style": "analogies",
+  "strengths": [],
+  "weaknesses": [],
+  "created_at": "2025-06-19T12:36:58.053651"
+}

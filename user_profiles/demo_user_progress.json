@@ -1,0 +1,96 @@
+{
+  "topics_completed": [],
+  "quiz_scores": {
+    "Calculus": [
+      {
+        "score": 85,
+        "date": "2025-06-19T12:36:58.067664"
+      },
+      {
+        "score": 88,
+        "date": "2025-06-19T12:36:58.069460"
+      },
+      {
+        "score": 85,
+        "date": "2025-06-19T12:39:19.412793"
+      },
+      {
+        "score": 88,
+        "date": "2025-06-19T12:39:19.413451"
+      }
+    ],
+    "Physics": [
+      {
+        "score": 72,
+        "date": "2025-06-19T12:36:58.068512"
+      },
+      {
+        "score": 78,
+        "date": "2025-06-19T12:36:58.070781"
+      },
+      {
+        "score": 72,
+        "date": "2025-06-19T12:39:19.413062"
+      },
+      {
+        "score": 78,
+        "date": "2025-06-19T12:39:19.413611"
+      }
+    ],
+    "Machine Learning": [
+      {
+        "score": 65,
+        "date": "2025-06-19T12:36:58.069062"
+      },
+      {
+        "score": 70,
+        "date": "2025-06-19T12:36:58.071316"
+      },
+      {
+        "score": 65,
+        "date": "2025-06-19T12:39:19.413265"
+      },
+      {
+        "score": 70,
+        "date": "2025-06-19T12:39:19.413760"
+      }
+    ],
+    "Quantum Mechanics": [
+      {
+        "score": 60,
+        "date": "2025-06-19T12:36:58.071593"
+      },
+      {
+        "score": 60,
+        "date": "2025-06-19T12:39:19.414476"
+      }
+    ],
+    "Linear Algebra": [
+      {
+        "score": 75,
+        "date": "2025-06-19T12:36:58.071818"
+      },
+      {
+        "score": 75,
+        "date": "2025-06-19T12:39:19.414691"
+      }
+    ]
+  },
+  "learning_streaks": 0,
+  "total_study_time": 520,
+  "last_activity": "2025-06-19T12:39:19.414688",
+  "current_topics": [
+    "Calculus",
+    "Physics",
+    "Machine Learning",
+    "Quantum Mechanics",
+    "Linear Algebra"
+  ],
+  "mastery_levels": {
+    "Calculus": "advanced",
+    "Physics": "intermediate",
+    "Machine Learning": "beginner",
+    "Quantum Mechanics": "beginner",
+    "Linear Algebra": "intermediate"
+  }
+}
