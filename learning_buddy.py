@@ -3,6 +3,7 @@ load_dotenv()
 
 from crewai import Agent, Task, Crew, LLM
 from user_profile import UserProfile
+from interactive_quiz import InteractiveQuiz
 import json
 import os
 import random
@@ -19,6 +20,7 @@ llm = LLM(
 class LearningBuddySystem:
     def __init__(self, user_id: str = "default_user"):
         self.user_profile = UserProfile(user_id)
+        self.quiz_system = InteractiveQuiz(self.user_profile)
         self.setup_agents()
     
     def setup_agents(self):

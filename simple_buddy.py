@@ -5,6 +5,7 @@ Works without external LLM when GROQ is unavailable
 """
 
 from user_profile import UserProfile
+from interactive_quiz import InteractiveQuiz
 import json
 import os
 import random
@@ -16,6 +17,7 @@ class SimpleLearningBuddy:
     
     def __init__(self, user_id: str = "default_user"):
         self.user_profile = UserProfile(user_id)
+        self.quiz_system = InteractiveQuiz(self.user_profile)
     
     def get_dashboard(self):
         """Get user learning dashboard"""
@@ -154,37 +156,14 @@ class SimpleLearningBuddy:
         
         return "\n".join(explanation)
     
+    def take_interactive_quiz(self, topic: str, num_questions: int = 5):
+        """Take an interactive quiz with real-time Q&A"""
+        return self.quiz_system.run_interactive_quiz(topic, num_questions)
+    
     def generate_quiz(self, topic: str, num_questions: int = 5):
-        """Generate simple quiz without LLM"""
-        mastery_level = self.user_profile.progress.get("mastery_levels", {}).get(topic, "beginner")
-        
-        quiz = []
-        quiz.append(f"🧠 ADAPTIVE QUIZ: {topic}")
-        quiz.append("=" * 50)
-        quiz.append(f"📈 Difficulty Level: {mastery_level.title()}")
-        quiz.append(f"📋 Questions: {num_questions}")
-        
-        # Sample quiz structure
-        quiz.append(f"\n📝 Quiz Questions for {topic}:")
-        
-        for i in range(1, num_questions + 1):
-            quiz.append(f"\n{i}. [Sample Question {i} about {topic}]")
-            quiz.append(f"   A) Option A")
-            quiz.append(f"   B) Option B") 
-            quiz.append(f"   C) Option C")
-            quiz.append(f"   D) Option D")
-        
-        quiz.append(f"\n💡 Quiz Generation Tips:")
-        quiz.append(f"• Questions are tailored to your {mastery_level} level")
-        quiz.append(f"• Focus on core concepts in {topic}")
-        quiz.append(f"• Review incorrect answers for better understanding")
-        quiz.append(f"• Regular practice improves retention")
-        
-        quiz.append(f"\n📊 After completing the quiz:")
-        quiz.append(f"• Record your score using option 9 in the main menu")
-        quiz.append(f"• This helps track your progress and adjust difficulty")
-        
-        return "\n".join(quiz)
+        """Legacy method - now redirects to interactive quiz"""
+        print("🎮 Starting Interactive Quiz Mode...")
+        return self.take_interactive_quiz(topic, num_questions)
     
     def create_weekly_plan(self, focus_topics: List[str] = None):
         """Create simple weekly learning plan"""
@@ -361,7 +340,7 @@ def main():
         print("1. 📊 View Dashboard")
         print("2. 📝 Analyze Learning Progress")
         print("3. 💡 Get Topic Explanation")
-        print("4. 🧠 Generate Quiz")
+        print("4. 🧠 Take Interactive Quiz")
         print("5. 📅 Create Weekly Plan")
         print("6. 💪 Get Motivation Boost")
         print("7. 🎯 Optimize Study Techniques")
@@ -397,8 +376,7 @@ def main():
             if topic:
                 num_q = input("Number of questions (default 5): ").strip()
                 num_questions = int(num_q) if num_q.isdigit() else 5
-                result = buddy.generate_quiz(topic, num_questions)
-                print(f"\n🧠 QUIZ:\n{result}")
+                buddy.take_interactive_quiz(topic, num_questions)
             else:
                 print("❌ Please provide a topic.")
         elif choice == "5":

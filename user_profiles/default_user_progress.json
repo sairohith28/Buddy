@@ -1,0 +1,36 @@
+{
+  "topics_completed": [],
+  "quiz_scores": {
+    "Deep Learning": [
+      {
+        "score": 98.0,
+        "date": "2025-06-24T22:29:05.207077"
+      }
+    ],
+    "nlp": [
+      {
+        "score": 100.0,
+        "date": "2025-06-24T22:33:22.910803"
+      }
+    ],
+    "Machine Learning": [
+      {
+        "score": 80.0,
+        "date": "2025-06-24T22:34:36.628245"
+      }
+    ]
+  },
+  "learning_streaks": 0,
+  "total_study_time": 74,
+  "last_activity": "2025-06-24T22:34:36.628129",
+  "current_topics": [
+    "Deep Learning",
+    "nlp",
+    "Machine Learning"
+  ],
+  "mastery_levels": {
+    "Deep Learning": "advanced",
+    "nlp": "advanced",
+    "Machine Learning": "intermediate"
+  }
+}
